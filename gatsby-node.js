@@ -3,5 +3,8 @@
  *
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
+require('ts-node').register();
 
-// You can delete this file if you're not using it
+const { createPages } = require('./src/lib/createPages');
+
+exports.createPages = createPages;
